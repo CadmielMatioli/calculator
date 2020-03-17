@@ -11,3 +11,10 @@ function solve() {
 function clr() { 
     document.getElementById("result").value = "";
 }
+
+function convert(){
+    let x = document.getElementById("result").value 
+    let y = eval(x);
+    counter = Math.abs(y) * -1;
+    document.getElementById("result").value = counter; 
+}
