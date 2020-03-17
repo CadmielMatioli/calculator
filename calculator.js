@@ -15,6 +15,10 @@ function clr() {
 function convert(){
     let x = document.getElementById("result").value 
     let y = eval(x);
-    counter = Math.abs(y) * -1;
+    if(Math.sign(y) > 0){
+        counter = Math.abs(y) * -1;
+    }else{
+        counter = Math.abs(y);
+    }
     document.getElementById("result").value = counter; 
 }
