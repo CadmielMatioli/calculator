@@ -11,7 +11,8 @@
         <table border="3">
             <tr>
                 <td colspan="12">
-                    <input type="text" id="result" value="">
+                    <input type="text" id="result" minlength="0" maxlength="5" size="5" inputmode="numeric">
+                    <input type="text" id="resulthide" minlength="0" maxlength="5" size="5" inputmode="numeric" hidden>
                 </td>
             </tr>
             <tr>
@@ -43,8 +44,9 @@
                 <td colspan="4"><input type="button" onClick="convert()" value="+/-"></td>
                 <td colspan="4"><input type="button" onClick="dis('0')" value="0"></td>
                 <td colspan="4"><input type="button" onClick="solve()" value="="></td>
+            </div>
             </tr>
-        </table>
+        </table>          
         <script src="calculator.js"></script>
     </body>
 </html>
